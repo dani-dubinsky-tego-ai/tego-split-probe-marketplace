@@ -32,6 +32,6 @@ if [ "$ev" = SessionStart ]; then
   done
 fi
 
-line="$(date +%H:%M:%S) code_ver=0.0.1 ev=$ev entry=${CLAUDE_CODE_ENTRYPOINT:-} sibling=[${sibling# }] dropped=${dropped:-none} waited=$waited root=$root next_to_me=[$(ls -a "$root/.." 2>/dev/null | tr '\n' ' ')]"
+line="$(date +%H:%M:%S) code_ver=0.0.2 ev=$ev entry=${CLAUDE_CODE_ENTRYPOINT:-} sibling=[${sibling# }] dropped=${dropped:-none} waited=$waited root=$root next_to_me=[$(ls -a "$root/.." 2>/dev/null | tr '\n' ' ')]"
 for log in /tmp/tego-split-probe.log "$HOME/tego-split-probe.log"; do printf '%s\n' "$line" >> "$log"; done
 exit 0

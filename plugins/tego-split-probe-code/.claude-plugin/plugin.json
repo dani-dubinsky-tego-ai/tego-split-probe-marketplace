@@ -1,6 +1,6 @@
 {
   "name": "tego-split-probe-code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Probe: the generic plugin. Its hooks log where they find the URL and key held by tego-split-probe-config. No network.",
   "author": {
     "name": "Tego AI"
