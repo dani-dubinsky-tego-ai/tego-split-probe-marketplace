@@ -1,0 +1,38 @@
+{
+  "description": "Probe: log where each hook finds the config plugin's URL and key",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 8,
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/probe.sh\"; exit 0"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 8,
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/probe.sh\"; exit 0"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 8,
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/probe.sh\"; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}

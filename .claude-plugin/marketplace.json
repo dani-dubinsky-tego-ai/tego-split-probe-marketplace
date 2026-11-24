@@ -1,0 +1,16 @@
+{
+  "name": "tego-split-probe",
+  "owner": {
+    "name": "Tego AI"
+  },
+  "metadata": {
+    "description": "Temporary probe marketplace: one plugin whose hooks write a local log. No network."
+  },
+  "plugins": [
+    {
+      "name": "tego-split-probe-code",
+      "source": "./plugins/tego-split-probe-code",
+      "description": "Probe: hooks log where they find the URL and key held by tego-split-probe-config."
+    }
+  ]
+}
